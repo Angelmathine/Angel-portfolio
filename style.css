@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif
+}
+
+/*MOBILE VERSION STYLING*/
+@media(max-width:768px){
+    .desktop_menu,.desk_socials,.home_desk_bg{
+        display: none;
+    }
+     header{
+        background-color: #3C3A39;
+        padding: 25px 10Ppx;
+        position: fixed ;
+        width: 100%;
+        border-radius: 0 0 0px 8px;
+        border-bottom: 1px solid #ff6B00 ;
+        box-shadow: 1px 1px 1px #ff6B00;
+     } 
+     header nav{
+      display: flex;
+      justify-content: space-between;
+      align-items:center ;
+     }
+     .Logo a{
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700px;
+      color: #ffff;
+     }
+.mobile_menu{
+display: flex;
+flex-direction: column;
+gap: 8px;
+     }
+     .mobile_menu p{
+        padding: 2px 15px ;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+     }
+     .logo a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #ff6B00;
+        padding: 10px;
+        font-weight: 700;
+     }
+     .home{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 12px 0 20px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+     }
+     .home_text{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-right: 24px;
+     }
+     .home_text h1{
+        color: #ff6B00;
+        font-size: 60px;
+     }
+     .home_text p{
+        font-size: 16px;
+     }
+     .mob_social ul{
+        display: flex;
+        list-style: none;
+        padding-right: 24px;
+     }
+     .bg{
+        display: flex;
+        justify-content: end;
+        align-content: end;
+        right: 0;
+        width: 100%;
+        margin-top: -240px;
+     }
+}
+.projects{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 150px 18px;
+}
+.projects_heading{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+
+}
+.projects_heading h2{
+   font-size: 40px;
+   font-weight: 400;
+}
+.projects_heading p{
+   background-color: #000000;
+   padding: 1px 55px;
+}
+.dif_card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 327px;
+border: 2px solid #ff6B00;
+padding: 0px 5px 5px 5px;
+border-radius: 8px;
+border-top: none;
+}
+.dif_card span{
+   background: url(./assets/images/mob_lone_bg.svg);
+   background-size: cover;
+background-position: center;
+   padding: 12Opx 163px;
+   background-repeat: no-repeat;g
+}
+.dif_text{
+   display: flex;
+   flex-direction:column;
+   gap: 10px;
+}
+.dif_text h3{
+   font-size: 32px;
+   font-weight: 400;
+}
+.dif_text p{
+   font-size: 16px;
+   font-weight: 400;
+}
+.dif_text ul{
+   display: flex;
+   list-style: none;
+   gap: 10px;
+} 
+.dif_text ul li{
+   border: 1px solid;
+   padding: 10px 12px;
+   border-radius: 5px;
+   font-size: 15px;
+   font-weight: 500;
+}
+.dif_text button{
+   width: 124px;
+   background-color: #ff6B00;
+   padding: 12px;
+   font-size: 17px;
+   font-weight: 500;
+   border: none;
+   border-radius: 8px;
+}
+.sim_cards{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.sim_card{
+   width: 327px;
+   height: 386px;
+   border: 2px solid #ff6B00;
+   border-radius: 8px;
+   background: url(../images/abt_mob_bg.svg);
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.sim_card h3{
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 44px;
+
+}
+.sim_card ul{
+   display: flex;
+   gap: 10px;
+   list-style: none;
+}
+.sim_card p{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.sim_card ul li{
+   padding: 5px;
+   font-size: 15px;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+.sim_card ul li::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: -1;
+   background: gray;
+   backdrop-filter: blur(10px);
+   opacity: 50%;
+   border-radius: 2px;
+}
+.sim_card button{
+    width: 124px;
+   background-color: #ff6B00;
+   padding: 12px;
+   font-size: 17px;
+   font-weight: 500;
+   border: none;
+   border-radius: 8px;
+   margin-top: 84px;
+   border: 1px solid #ffffff;
+}
+.about{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-top: 120px;
+   background-color: #000000;
+}
+.about_text{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.abt_txt{
+   display: flex;
+   flex-direction:column ;
+   padding: 5px;
+   gap: 10px;
+   border-bottom: 1px solid #ffffff;
+}
+.abt_txt h2{
+   font-size: 60px;
+   font-weight: 600px;
+   color: #ff6B00;
+}
+.abt_txt p{
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 400;
+   background-color:#ffffff;
+}
+.abt_txt button{
+    width: 190px;
+   background-color: #ff6B00;
+   padding: 12px;
+   color: #ffffff;
+   font-size: 17px;
+   font-weight: 500;
+   border: none;
+   border-radius: 8px;
+}
+.abt_bg_desk{
+   display: none;
+}
+.abt_bg{
+   display: flex;
+   justify-content: end;
+   margin-top: -90px;
+   border-bottom: 1px solid #ffffff;
+   padding-left: 20px;
+}
+.about_cards{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:  20px;
+}
+.about_card{
+   width: 327px;
+   height: 340px;
+   border:  1px solid #ff6B00;
+   color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:  15px;
+   border-radius: 4px 4px 20px 20px;
+}
+.about_card span{
+   display: flex;
+   gap: 10px;
+}
+.about_card ul{
+   list-style: none;
+   display: flex;
+   flex-direction:column ;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+}
+.about_card ul li{
+   font-size: 20px;
+}
+}
